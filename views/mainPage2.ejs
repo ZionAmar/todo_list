@@ -1,0 +1,32 @@
+
+<%-include("page_top.ejs")%>
+<main>
+    <h1>
+Tasks
+    </h1>
+        <input id="name" placeholder="name"><br>
+        <input id="due_date" placeholder="due_date"><br>
+        <input id="done_date" placeholder="done_date"><br>
+        <select id="category_id">category_id</select><br>
+        <input id="owner_id" placeholder="owner_id"><br>
+        <input id="creator_id" placeholder="creator_id"><br>
+        <button onclick="AddNewLine()">Send</button>
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th>id</th>
+            <th>name</th>
+            <th>due_date</th>
+            <th>done_date</th>
+            <th>category_id</th>
+            <th>owner_id</th>
+            <th>creator_id</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="mainTable">  </tbody>
+    </table>
+</main>
+<script src="/js/script_tasks.js"></script>
+<%-include("page_bottom.ejs")%>

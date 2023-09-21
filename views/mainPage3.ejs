@@ -1,0 +1,25 @@
+<%-include("page_top.ejs")%>
+<main>
+    <h1>
+        Users
+    </h1>
+<input id="name" placeholder="name"><br>
+<input id="username" placeholder="username"><br>
+<input id="password" placeholder="password"><br>
+    <button onclick="AddNewLine()">הוסף</button>
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th>id</th>
+        <th>name</th>
+        <th>username</th>
+        <th>password</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody id="mainTable">  </tbody>
+</table>
+</main>
+<script src="/js/script_users.js"></script>
+<%-include("page_bottom.ejs")%>
